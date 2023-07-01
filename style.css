@@ -17,6 +17,10 @@
     border-right: 1px solid #eeeeee;
 }
 
+.login>button{
+    font-size:large;
+}
+
 #profile-logo{
     display: none;
 }
@@ -42,6 +46,7 @@ div>h6{
     border: none;
     padding-top:5px;
     padding-bottom:5px;
+    object-fit: cover;
 }
 
  .hero, .products{
@@ -227,6 +232,7 @@ div>h6{
         background-color: black;
         color: white;
         border-radius: 4px;
+        padding:2px;
     }
 
     .caption{
@@ -240,7 +246,7 @@ div>h6{
 
     /* responsive part here */
 
-    /* @media (max-width: 1000px) {
+    @media (max-width: 1020px) {
 
         .logo,.login,.cart,.header{
             display: none;
@@ -249,5 +255,66 @@ div>h6{
         #profile-logo{
             display: initial;
         }
+
+        .nav{
+            flex-wrap: wrap;
+        }
         
-      } */
+        .categories{
+            display: none;
+        }
+
+        .outer{
+            flex-wrap: wrap;
+        }
+
+        .searchbar{
+            order:1;
+            width: 100%;
+        }
+
+      }
+
+      @media (max-width: 565px) {
+        
+        .download-button{
+            font-size: small;
+            padding: 1px;
+        }
+      }
+
+        @media (max-width: 410px){
+            
+            .outer{
+                display: none;
+            }
+        }
+
+        @media (min-width:370px) and (max-width: 420px){
+            
+            .caption{
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width:350px){
+
+            .social{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;                
+            }
+
+            .caption{
+                font-size: small;
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width:362px){
+            .searchbar{
+                padding:1px;
+            }
+        }
+        
+    
