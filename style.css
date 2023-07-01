@@ -17,6 +17,10 @@
     border-right: 1px solid #eeeeee;
 }
 
+#profile-logo{
+    display: none;
+}
+
 div>h6{
     font-weight: 800;
     margin-bottom: 1px;
@@ -34,11 +38,11 @@ div>h6{
   
   .searchbar>input {
     background-color: #f8f8f8;
-    width: 90%;
+    width:90%;
     border: none;
     padding-top:5px;
     padding-bottom:5px;
-  }
+}
 
  .hero, .products{
     display: flex;
@@ -185,3 +189,65 @@ div>h6{
     h5>a{
         padding-left: 10px;
     }
+
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .social>div{
+        margin-inline: 10px;
+    }
+
+    .social>div>a{
+        color: initial;
+        text-decoration: none;
+    }
+
+    #download-text{
+        font-weight: 600;
+        font-size: 15px;
+        margin: 5px;
+        color: #666666;
+    }
+
+    .download-button{
+        border: 0.5px solid #666666;
+        font-size:medium;
+        margin-right: 5px;
+        /* background-color: #223D4D; */
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+    }
+
+    .caption{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: larger;
+        letter-spacing: 0.7px;
+    }
+
+
+    /* responsive part here */
+
+    /* @media (max-width: 1000px) {
+
+        .logo,.login,.cart,.header{
+            display: none;
+        }
+
+        #profile-logo{
+            display: initial;
+        }
+        
+      } */
